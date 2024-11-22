@@ -1,0 +1,10 @@
+1. linear algebra
+2. statistics -> basics to advanced -> applications of all the topivs in data science
+3. differential calculus 
+
+1. linear algebra: scalars, vector operations, matrices, matrix operations, functions, linear transformations, inverse function, eigen values and eigen vectors
+ neural network: forward propogation -> matrix operations (application in data science)
+
+2. statistics: ml, deep learning -> models -> huge datasets
+
+3. differential calculus

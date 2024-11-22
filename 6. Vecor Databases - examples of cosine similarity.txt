@@ -1,0 +1,14 @@
+application of dot product -> cosine similarity
+1. vector databases -> specifically when we talk about vector databases -> we design a RAG system i.e retrieval augmented generation
+lets say we have a huge PDF or huge book of 500pages, our aim is to create a chatbot- whoose functionality os -> whenver we ask questions toit from that book
+it should give the answers -> how thsi application is built and why vectors rae important 
+whenever we ask question to chatbot, it should be able to retieve ansers from that book and it should give the asnwers
+so to achive thsi, we will convert the entire text that is present in the book  into vectors, so all the sentences will be converted into vectors
+using word embedding techniques like word to vec, tf idf, glove etc.,
+once we convert the text in the book into vecrtors and we will save it in the vector databases where all these vectors will be saved
+and whever we ask any query, this quesry will be convertrd into vector, techniques that w ehave used to convert text in the book to vectosr the same techniques
+will be used to convert the quesry asked by the user into vector, so once thsi query is converted to vector'next step is will take the vector and query the vector database
+and when we query the vector database, internally in this vector database there will be cosine similarity serach that will happen
+in this cosine similarity search a specific vector which is already available in the vector database will be compared with vector that the user is querying 
+and whatever matches with higher percentage and that vector will be returned to the user in the text format
+rght now, most of the gen ai applications it is used

@@ -1,0 +1,31 @@
+Linear Transformation:
+it is a function between two vector spaces that preserves the operations of vector addition and scalar multilication. this means that 
+if T is a linear transformation from a vector V to a vector space W, then for any vectors
+ it needs to satisfy 2 important properties
+will consider T  as a linear transformation that is basicaly transforming T:V -> W => to call T as a linear transformaton it needs to satisfy
+1. additivity: transformsation of any vectors T(u+v) = T(u) + T(v)
+2. homogenity: here wehave T(cu)=cT(u), c is a scalar value
+
+u,v belonging to V and c is a scalar value
+
+ex: reflection is an example of linrar transformation
+the reflection transformation T across the y axis maps a vector x-[x,y] that belongs to R^2(square since is is 2D)
+transfornation t[x)=[-x,y] across y axis
+
+transformation be expressed as A=[[-1 0][0 1]]
+t(x)=A*X=> [x y][[-1 0][0 1]]
+to chcek if A*X is linear transformation we need to chcek additivity and homogenity properties
+
+
+checking additivity
+let u=[u1 u2] and v=[v1 v2] let these be 2 vectors that belongs to R^2
+t(u+v)=t(u)+t(v)
+
+u+v=[u1 u2]+[v1 v2]=> [u1+v1 u2+v2]
+transformation is nothing but A multiplied by X
+t(u+v)=A*(u+v) =>[[-1 0][01]]*[u1+v1 u2+v2] => [-(u1+v1) (u2+v2)]
+t(u) => A*u => [[-1 0][0 1 ]]*[u1 u2]=> [-u1 u2]
+t(v)=A*v => [[-1 0][0 1]] * [v1 b2] =>[-v1 v2]
+t(u)+t(v) => [-u1 u2] +[ -v1 v2] => [-u1-v1 u2+v2] => hence t(u+v)=t(u)+t(v) => satisfies additivity rule
+
+checking homogenity

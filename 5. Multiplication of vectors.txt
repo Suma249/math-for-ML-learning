@@ -1,0 +1,52 @@
+Multiplication of Vectors: 3 types that we do in data science
+ 1. dot product(inner product)
+ 2. elementwise multiplication
+ 3. scalar multiplication
+
+1. Dot Product: dot product of 2 vectors results in a scalar and is calculated as the sum of the products of their corresponding components
+lets say we have vectors a=[ 2 3] and b=[4 5]
+dot product of a and b is we multiply x coordinate of a and b and multiply y coordinate of a and b, and them sum of these two resulting values
+a.b=2*4 + 3*5 
+a.b=8+15 => 23 -> 23 is a scalar value
+
+if we take transpose of a.(transpose)b=> transpose of b is notjing but writing it in horizontally 
+usually, in most of the usecases for doing dot product we need to transpose one of the vector
+in ml and dl -> we use these transpose techniques
+
+create a xy coordinate system and represent vectors [5, 0] and [2, 2] 
+now our aim is to take a vector dot product with b evctor, mathematically it is 10(5*2 + 2*0)
+wrt coordinate system , take a b vector and project it onto the other a vector, length of projected b vector will b ethe length from origin to the point where this b vector is projected
+length of projected b vector * length of a vector(x value of a vector) => 2*5 => 10,
+
+
+lets say we have a=[-5, 0] and b=[2 2],
+in cordinate system a vector is in opppsite direction to the b vector so what we will do is,will extend
+the a vector in the opposite direction i.e in the direction of b vector (+ve)  and will project is 
+will get, length of project b vector is 2 and length of a vector is -5 => -10, negative beacsu ethese 2 vectors are in opposite direction
+
+lets say we ahve b=[0, 2], and a=[-5,0] and now if we project b vector it will fall on the origin i.e 0 displacement
+will get dot product as 0, it basically indiactes that if other vector is projecting towards the origin our entire dot product will be 0 as there
+will be 0 displacement
+if we project vector to the origin -> there will be no displacement 
+
+applications of dot product in data science -> gen ai apps-> ex: retrievel augmented system
+1. cosine similarity: it is a measure used to determine how similar 2 vectors are. calacualtes the cosine of the angle between two vectors providing a similarity
+score that ranges between -1(dissimiar) to 1 (complete similar)
+cos theta=(a.b)/(||a|| || b||)
+
+it is used in recommendatio system, ex: netflix system lets say we are seeing a action movie after completing thsi moview will be getting arecommenation of action moview
+lets say we are seeing avaenges, one kind of movie lets consider taht this moview is represente din vector of dimensions
+why we are representing it is 5 dimensions is based on different different parameters 
+lets say first vector is based on feature action, second may be comedy, third may be drama and 4th may be romance and this is how it is represented
+and there is another moview= b, that have vectors [ 2 0 1 1 1 ]
+if a user watches movie avengers, how do we determine if user should be recommended movie b?
+this is done by calculating cosine similarity -> if it goes towards -1 we wont recommend it if it goes towards the +1 we will recommend it
+step1: calacuate dot product of a and b
+        a.b =1.2 + 2.0 + 0.1 + 3.1 + 1.1 => 6
+step2 : maginitude of a and b , for calculating magnitude(euclidean norm and manhatton norm)\ 
+        euclidean norm -> take all the vectors for a and square them, add them and take sqr root of the result, ||a||=> square root of (1^2 + 2^2 + 0^2 + 3^2 + 1^2) => square root of 15 => appriximate to 3.872
+         and siilarly we get ||b|| as square root of 7 => approximate to 2.646
+        euclidean norm: in a coordinate system of 5 dimensions, we will represent our avengers vector, euclidian norm basically means that 
+        if we have to calculate the distance of this vectr -> gives the maginiude and to find the distance, we need to find the dstance between origin the and the point
+        to do this, according to euclidean norm if we have 2 points x1, y1 and x2, y2 -> to calculatethe dustance we will use square root of (x2-x1)^2 + (y2-y1)^2
+step 3: cos theta => 6 / (3.872 + 2.646) => 0.586 => positive i.e 58.6 % positively similar i.e there is 58% of chance is there that b movie will be recommended

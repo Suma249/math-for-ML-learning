@@ -1,0 +1,31 @@
+Scalars and Vectors  are used in physics, maths and computer science
+
+Scalar:is a single numerical value and it represents a magnitude or quantity and has no directions
+ex: car speed of 45 km/hr, value 45 is the magnitude
+    temperature in celsius: 25 decree celsium
+applications in data science
+ lets say we have a dataset with features f1, f2 and f3 with 5 specific records
+ if we calcukate the total number if records or average of the feature f1 -> scalar
+ for a prolem regression, in simple limnear regression we use eq y=mx+c m =slope and c=ointerceot
+ here we wont consider m as scalar value but c because c is a single numberical value but the value of m depends on x
+
+Vectors: is a numerical value that has both magnitude amd direction
+in data science, a bvector is a ordered list of numbers that can reprrsent a point in space or quantity with both magnitude and direction
+ex: speed of the car is 45 km/hr in the direction of east
+lets say we have a datet with features iq, number of study hours and whether the student has been oassed or failed 
+here a vector reprsenting person iq and number of study hours [90,3hrs], 3 is the magnitude and hrs is the unit
+lets say we have a vector reprrsenting person weights overs time [70, 72, 75, 73] -> for jan, feb, mnarch april
+where doe durectons come into picture: in data science directions does not directly come into picture
+in datsacience, vector represents a colection of values in different dimensions
+
+in data science and machine learning, we create models, aim of this model is to take input feature and preduct the output feature which is a respinse of model
+iq, numberOfHours pass/fail
+90    2             fail
+100   2             pass
+each record can be represented as a vector,iq can be plotted against nu,ber of hours in the xy coordinate
+
+unit vectror: has a magnitude of value 1
+
+applications of vectors
+
+1. gaming industry: vectors are used a lot in gaming industry

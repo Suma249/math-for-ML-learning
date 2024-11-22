@@ -1,0 +1,42 @@
+lets say we have 2 vectors
+p1=[-4 3]
+p2=[5 6]
+
+p1+p2= [-4 3]+[5 6] => [1 9]
+
+in coordinate system, will represent these two pioints p1 and p2 in this coordinate system
+and adding these 2 vectors actually 
+if we move the point (-4 3) and move parallely towards (5,3), i.e 5 points from -4 in the x direction after reach 5 points in x moving 3 points up in the y direction will give (1,6)
+addition of two vectors is more like how we are treversing from one point to another point
+and we can do the same operations for vectord of any dimension
+
+a=[x1 y1 z1] b=[x2 y2 z2]
+a+b= [x1+x2 y1+y2 z1+z2] => [x3 y3 z3]
+
+a=[-2 -2], b=[-1 -1]
+adding a+b will get [-3 -3]
+
+example wrt datascience
+
+solving a usecase
+there are 2 sensors sensor1 and sensor 2 where sensor1 gives [3 5 7] and sensor2 gives [ 2 4 6]
+final sensor: sensor1 + sensor2 => [ 5 9 11]
+
+used for data aggregation tasks 
+used on feature engineerig tasks
+NLP: lets say we have e-comerce website where peiple put reviews
+we have reviews and sentiment
+if we need to train a model, it takes a input review and gives sentiment, inside the model lot of mathematical calculations will be happening and this modes not understand text
+in NLP whsat we will be doing is will convert text into vectors
+convertinf text into numerical requres lot of techniques, one of such technique is one-hot encoding, tf-idef, word t ec, etc.
+these will cobvert words into vector
+every sentence is reprrsented  into some number pf vrectors and these vectors are numerical values
+and we can use numerical values and train the model
+word embeddings: lets say we have our data 0.2, 0.1 0.4] and another word science: [0.3 0.7 0.2]
+ now if we combine vectors of words data and science [0.2 0.1 0.4] + [0.3 0.7 0.2] => [0.5 0.8 0.6] -> it represents a word data science
+
+image processing: coloured images given in rgb format 
+ red channel [ 255 128 0]
+ green channel: [128 255 0]
+ blue channel [ 64 64 255]
+to convert rgb imahe into gray picture(white and black) =? add r+g+b channels

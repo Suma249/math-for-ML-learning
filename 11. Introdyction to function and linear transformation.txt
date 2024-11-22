@@ -1,0 +1,20 @@
+Function and Linear Transformations
+
+Functions: function is a mathematical relationship that uniquely associates elements of one set (called the domain) with the elements of another set (called teh codomain).
+in simple terms, a function maps input to output in specific way
+
+notation: a function of mapping elemnts from set x(domain)  to set y(codomain) is denoted by f: x ->y
+if x is an element of X, then f(x) is the corresponding element in Y
+
+example: f(x)=2x+3 => function f(x) maps each real number x to to a real number 2x+3
+consider x=5, than this x is getting mapped with the function f to y, x -> ywith function f
+f(2)=2*2+3 => 7 -> this indicates that function f(x) is mapping 2 that belongs tp real number to 7 that also belongs to real numbers
+we have some x value belonging to domain X, and we are mapping this x to some y in codomain Y using function f(x)
+
+lets say we have a vector [ x y z], this vector belongs to real number and it is 3 dimension
+if we want to apply function f, that gives the vector [x+y 6z]
+f: [x y z] -> [x+y 6z] belongs to real number -> can also be reprrsented as f: R^3 -> R^2
+three dimension vector is getting conveted into 2 dimension vector with the functin f
+
+ex in datascience:
+we have an algorithm called dimensionality reduction where we apply these kind of functions which is also called a transformations

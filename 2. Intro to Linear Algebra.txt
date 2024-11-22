@@ -1,0 +1,70 @@
+linear algrebra is a branch of mathematics that focuses on the study of vectors, vector spaces(also called linear spaces), linear transformations and systems 
+of linear equations. it provides a framework for understanding the properties and operations of these mathematical objects, which can be represented using matrices 
+and vectors
+
+understanding linear algebra as computer science student
+
+applications of linear algebra -> understanding it as computer science student
+1. data representation and manipulation: 
+   lets say we have a dataset to create a model to preduct something 
+   let the dataset be house price dataset, containing features area of the house, number of rooms, location and price 
+   now we want to create a model that takes area, location, and number of rooms as input and oredicts the house price
+   here area, number of rooms and location are called as independent features or input features
+   we humans can understand text and we can tell the house price
+  but if we are training a model completely from scratch it does not understand any of the features in the dataset, and all it understands is numbers 
+  it needs to understand therelationshuip between the input features and the output features like how the iput features varies with output feature
+  now, if we cinside this data, this data will be represented in the form of vectors(list of numbers), based on the list if vectors we have prices
+  and now the model will be abke to quantufy the relationship between input features and output features like if there are two features x and y, quantifying the features means
+  if x is increasing than how y is variying like that bssucally about correlation and covariance 
+  we basically represent data in the form of vectors -> when we are training the models
+  internally there are lot of mathematicsl operations getting calculsted 
+  here linear algebra provides tool for manipulating and representing data in the form of vectors
+  if area is increasingf by how much factir price will increase -> linear algebra
+  
+vectors can be single dimension lets say we have vector=[1200] -> single dimention vector[1200 2] -> 2 dimension
+
+whenver we say 2dimension we have a coodrdinate system of x and y, plotting of every point ex: (1200, 45 lakhs) this becomes 2 dimension vector
+2 dimension vector s nothing but havig a point with x and y coordinates in xy coordinate
+
+lets say we have 3 dimebsion coordinate representing area, price and number of rooms, now there are points in this 3d coordinate system
+and these points are decided based on these 3 values that basically meams that every coordinate is represented by a vsctor of [x, y,z]
+x-> area, y-> number of rooms, z-> price
+
+can we have a 4dimension?
+max we can see 3dimension
+
+1. linear algbra is used in ml, because i works well with higher dimension data, i.e no matter in whsat dimension the data is in our case we have 4 features 3 input and 1 outpu feature
+kind of matrix or vector caculations done it gives fabulous data 
+lets say we have 500 dimension or 500 features, in linear algebra we have concepts like dimensionality reduction these features when we apply dimensionality reducetion
+we can convert into 2 dimensions usually less number of dimensions so that even we humans can understand  and by seeing this data even we can predict 
+like how output feature is changing wrt to each input feature
+2. machine learning and artificial intelligence: one of the core concept that we do in ML is training a model
+  lets say we have price as output feature and size of the input features, there will be training data points 
+  in model training what we do is, since it is a linear regression algorithm , one of the algoruthm that we use is linear regression
+  this algoruthm creates a best fit line, with this line with respect to any datapint of size, we will be able to predict the prize
+  in model training, we rely specifucally on linear algera bnecause to traing the model we will be doing matrix arthmetic operations 
+  and here we are goibg to linear equations like equation of a straight line y=mx+c
+  dimensionality reduction: as a human being, we cannot visualize data of higher reduction. in dimensionality reduction we use an algorithm called PCA 
+  which uses linear algebra concept(eigen valu and rigen vector) we will be able to reduce from higher dimension to lower dimension
+3. Neural Networks: forward propogation and backward propogation
+  lets say we have a neural network wirth 2 input layers or input nodes,lets say we have 1 hidden layer with 3 hidden neuraons and 1 inoput layer and 1 output layer
+  here, lets say we have a input feature area and number of rooms, and the output 
+  in neural networks we give these 2 features as input, when these feature are sent we initialize some weights over the connected lines 
+  we have 2 input features and 3 hidden neurains so it becomes 2*3 matrix of input and weights
+  in this scenario, matrix multiplication is required
+  here, it involves matrix multiplication
+  this is forward propogation
+ in backward propogation we upade weights where we use chain rule derivative
+4. Computer Graphics
+   gpu -> has lot of cores -> matrix multiplications happen parallely
+   tensorflow(ised for neural networks) -> every value of matrix will be onverted to tensors and these sare trained in gpu
+   lets say we have  image, if we want to represent image inpixels, all these pixels will be in the ramge 0 to 250
+   if we want to perform operations on image like scaling, rrotating etc., -> we can do these ising linear algbra as it invovles transforming images
+5. Optimization: 
+  solving equations: any linear equations, ex: y=mx+c, in regression algorithm ee try to find right kind of m and c value m=slope c=intercept
+  now, lets say we have a dataset plotted in the coordinate with features pricre and size, our aim is to find the best fit line thst can take any size and preduct the correct prize
+  now to crete this line we have a eq y=mx+c, for this we need to have ruht kind of m and c value with which differences between the datapoints of size and orice 
+  is minimal, we come with best fit line by trying to find best slope and intercept, we need to try to solve it in such a way that 
+  we wil take f(x) that maximises the fuction and minimises the error
+  here in this algorithm concept of graduent descent will be applied  
+  

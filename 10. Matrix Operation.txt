@@ -1,0 +1,42 @@
+matrix operations are fundamental to data science as they provide a mechanism to manipulate and analyse multidemensional data efficiently
+
+when we datasets wrt to rows and columns, we can convert that nto matrix, considering this main operations on matrix that we speccifically do is
+ 1. matrix addition and subtraction
+ 2. scalar matrix multiplication
+ 3. matrix multiplication
+
+1. Matrix addition and subtraction
+   we add or subtract cooresponding elemnets of 2 matrces of the same dimension
+   lets say we have datset of 3 different products sold of different days in store 1 and similar suc dataset fr store 2
+   now to know the selling of each type of product in each store on different day we can use matrix addition
+  
+
+2. Scalar Multiplication: involves multiplying every element of matrix by a scalar value
+ lets say, suppose we have a matrix representing product prices in dollars and we want to adjustthese prices for inflation by a factor of 1.05
+ scalar multiplication => lets say we have price matrix p => padjusted => 105*p
+ lets say we have a datset of base salry of software engineers, hrs and accountants
+ 45k   30k  40k => in company a
+ 50k   35k  45k => in company b
+
+now in 2024, we wnatto update this data based on inflation  -> here it is scalar multiplication
+specifically scalar multiplication is use din feature engineering
+
+3. Matrix Multiplication: in most of ML na dDL algoruthms, matrix multiplication is used
+ operation: it invovles the dot product of rows of first matrix with columns of the second matrix
+  for two matrices a(m*n) and b(n*p) -> resultant of a*b => is c(m*p)
+  number of columns in first matrix shoud be equal to the number of rows in second matrix
+  lets consider
+ a=[1 2 3]  b=[7 9 11]
+   [4 5 6]    [8 10 12]
+a is of dimension -> 2*3 and b is pf dimension -> 2*3, here condition is not emt for matrix multiplication'so in such scenarios we will do tanspose of b matrix 
+where rows are cinverted into coumns so now transpose of b=>[7 8]
+                                                            [10 9]                         
+                                                            [11 12]
+           [7 8]
+a.b=[1 2 3][10 9]  => [c11 c12]
+    [4 5 6][11 12]    [c21 c22]
+dot product of each row with each each of the column
+c11=> (1*7)+(2*!0)+3*11)=58
+c12=>(1*8)+(2*10)+(3*!2) =64
+and siilarly we get c21 and c22
+this kind of operations are used in training deep learning neural networks and also in ML algorithms -> used extensively

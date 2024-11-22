@@ -1,0 +1,20 @@
+Elemrentwise Multiplication: in elementwise multiplication, corresponding elements of 2 vectors are multiplied to form a new vector of the same dimension
+
+lets say we have a=[1 2 3] anf b=[3 4 5]
+now, elementwise multiplication of a and b is [3 8 15], this resulting vector has the same dimension as the input vectors
+
+applications in data science
+lets say we have an e-commerce website, and in this website 
+in feature engineering, lets say we have a product, cost of the oroduct n=and product discount
+product cost dis
+ a      100  0.1
+ b      200  0.2
+we can cosnider cost as one vector and discount as another vector from these two we can derive another vector called discounted cost by doing elment wise
+multiplication we get [10 20]
+and from cost vector and dicounted cost we can get anothe rvector called final vector by subtracting discounted vector from cost vector
+
+in deep learning: in rnn, lstm rnn, gru rnn -> we use elementwise multiplication and elementwise addition
+there is a concept of forget gate, and input gate 
+lets say we have some signals or values [ 0.5 0.6 0.3] if we consider anoyher vector [0 0 1], by doing element wise multiplication 
+here second vector can act as gate => we get [ 0 0 0.3]
+here 

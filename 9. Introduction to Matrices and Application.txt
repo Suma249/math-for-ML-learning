@@ -1,0 +1,66 @@
+Matrices
+a matrix is a rectangular array of numbers, symbols or expressions arranged in rows and columns
+
+we denote matrix by capital letters, matrx is nothing but a group of vectors
+
+A=[ a11 a12 a13..a1n]
+  [ a21 a22 a23..a2n]
+  [.
+  [.am1 am2 .....amn] -> has aij where i denotes the row and j denotes the columns
+
+example of matrices in data science
+1. data representation
+lets consider we have a dataset , in this dataset we have fetaures maths score, physics score and biology score
+mathsscore  physicsscore biologyscore 
+55                65           75 -> student 1
+65                60           55 -> student 2
+
+when we are training a model, when we combine all the values we get 
+[55 65 75]
+[65 60 55]
+we have 2 rows representing 2 students and 3 columns representing 3 fetaures
+
+example2: images in computer vision
+if we cosnider 3*3 gray scale images, this image can be represented by 3*3 pixels
+these 3*3 pixels can be reprsented as a 3*# matrix
+0 -> black, 255 -> white
+
+confusion matrix: helpds us to calculate the accuracy of the model
+output predicted by a model is called y hat and we also have a truth value for which model has predicted a output and it is y
+and what we can do is, we can find the different between predicted and actual output and we can create a confusion matrix thst talks about
+accuracy of the model
+confusion matrix is a 4*4 matrix, 
+lets say we have confusion matrix 
+[50 10]
+[5 35]
+50 -> true positive
+10 -> false negative
+5 -> false positive
+35 -> true negative
+
+in nueral networks, matrix operations will be specificaly used, not only in neural networjs
+there is also ML algorithm called linear regression 
+basic a neural network looks like we will be having input layer lets say this input layer represents feature 1 and feature 2, we will be passing record by record
+lets say we have 3 nodes in the hidden layer, each input feature will e conected to all the nodes in the hidden layer
+and that is evebtually connected to the output layer
+one of the basic operation in neural networks is forward propogation, in forward propogation specific opeation is done when we move from input to the hidden 
+layer , we take x1=f1 and x2=f2, at a time we pass one record [x1, x2] 
+whewn inpurs are connected to hidden layers we have weights initialed
+for each input layer x tere are three hidden nodes with 3 weifhts iniliakised so we hae 
+2*3 
+z=w*(transpose of x)+bias
+
+for linear regression problem we useequation y=mx+x
+lets say we have 2 input features than y=m1x1+m2x2+c
+and this can written as transpose of(m)*x+c => m=[m1 m2] and x=[x1 x2]
+
+
+NLP:
+lets say we have dataset wuth input feature as review and output feature as sentiment
+
+review        sentiment
+food is good    1
+food is bad     0 
+in vector representation for reviews => [0.1 0.2 0.3][0]
+                                        [0.4 0.5 0.6][1]
+                           

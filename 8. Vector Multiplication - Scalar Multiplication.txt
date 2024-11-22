@@ -1,0 +1,19 @@
+Scalar Multiplication
+it involves multiplying a vector by scalar resukting in a vector where each component is scaled by the vector
+a=[ 3 5 7] c=4 => ca=> [ 12 20 28] 
+
+in cordinate system, if we represent a scalar the pointa=[2 2], multiplie dbythsi scalar c=2, will result in extendin this line from origin to thsi point to the other
+point that is the ca
+
+examples:
+there is something called normalization and standardization
+in normalization or standardization -> we will be scaling the data to some units, but why?
+lets say we have a gray scale image of 4*4 pixels and every pixel will be raging betwen 0 to 255 representing colors
+when we say gray scale there is only one channel
+fot image processing, its good things that we normalize the pixel values into 0 and 1
+how do we normalize it?
+we will take evry pixel and divide it by 255 -> that will be conveted to 0 or 1 -> this is called normalization
+
+lets say we have a feature called height and will cosnider that as a vector
+and now lets say we want to convert or scale thsi height to meters, now to scale , we bascally take a scaling factor and will multiply height vector by scaling factor
+

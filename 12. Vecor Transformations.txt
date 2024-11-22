@@ -1,0 +1,42 @@
+vector transformations
+
+lets say we have a function f: X -> Y, domain X may have set of vevtors and domain Y may have a set of vectors
+in this scenario, lets consider we have vector x in X and we want to tranform this x vector into y hat
+lets say we have a real number space of n dimension represented by R^n, our aim is, lets say there is a vector x in this space
+to transform this vector into another vector y that is in another real number space of n dimension
+f: R^n -> R^n
+x vector = [ x1 x2 x3...xn], where x1, x2..xn belongs to real number
+lets say we want to have 
+f(x, y,z)=(x+y, 2z)
+f([ 1 2 3]) =[3, 6]
+
+in xyz coordinate system, we can represent [1 2 3], if we project it, from top view we will get [ 1 2 3]
+after applying the function we get point [3 6] in xy coordinate system
+
+initially we had vector [1 2 3] that belongs to 3d real numbers that has been mapped to [3 6 ] tthat belongs to real numbers of 2d 
+this proccess of mapping vectors from one to another vector is called transformations
+
+hoe to project (1 2 3) and how we it is mapped to [3, 6] -> in coordinate system ?
+
+why we perform vector transformations?
+vector transformation: operation that maps vectors from one space to another, often changing their magnitude, direction or both. these transformations are 
+typically described using metrics and are fundamental in various fields including physics, engineering, computer graphics amd data science
+
+examples:
+1. scaling: a transformation that changes the magnitude of vectors while keeping their direction same
+if we have a vector v and we want to scale it using 2 -> than we get v1=2*v
+why scaling is important: in data science scaling is used in data normalization and also used computer graphics to resize the image
+
+2. rotation
+transformation that turns vectors around the origin
+lets say we have a vectir v=[1 0] that belonging to real numbers, here transformed vector would be [ 0 1] -> showing 90 degree rotation
+it ia useful in deep learning image processing techniques
+rotation will be used in image processing secifically
+robotics: for adjusting robot orientation
+3d graphics -> rotating objects
+
+3. Reflection: transformation that flips vectors over a specified axis or plane
+lets say we have vector v=[3 4] -> flippng across the yaxis will get eiher [-3 4] or [3 -4] it appens by multiplying the vector v with either [-1 1] or [1 -1]
+
+4. mirroring images
+5. shearing
