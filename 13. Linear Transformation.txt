@@ -16,6 +16,7 @@ transformation be expressed as A=[[-1 0][0 1]]
 t(x)=A*X=> [x y][[-1 0][0 1]]
 to chcek if A*X is linear transformation we need to chcek additivity and homogenity properties
 
+for t(x)=A*X to be a linear transformation, we need to check for additivity and homogenity property 
 
 checking additivity
 let u=[u1 u2] and v=[v1 v2] let these be 2 vectors that belongs to R^2
@@ -29,3 +30,40 @@ t(v)=A*v => [[-1 0][0 1]] * [v1 b2] =>[-v1 v2]
 t(u)+t(v) => [-u1 u2] +[ -v1 v2] => [-u1-v1 u2+v2] => hence t(u+v)=t(u)+t(v) => satisfies additivity rule
 
 checking homogenity
+let u=[u1 u2] belongs to R^2  and c be a scalar
+T(cu)=cT(u)
+cu=[c[u1 u2] =[cu1 cu2]
+T(cu)=A(cu)=[[-1 0][0 1]][cu1 cu2]=[-cu1 cu2] => lhs
+cT(u)=c(A.u)=c[[-1 0][0 1]][u1 u2]=>c[-u1 u2]=[-cu1 cu2]
+
+linear transformation: transfrmation of one vector into another in a linear way
+
+example transformation that is not a linear transformation
+
+lets say we have a vector b=[1 1], t:R^2 -> R^2(means we have a vector u that belongs to R^2 and we need to get v that belongs to R^2 upon transformat T)
+
+transformation that we are going to apply is T(x)=x+b, here b is a fixed vector
+T(x)=x+[1 1]
+additivity
+T(u+v)=T(u)+T(v)
+let vecor v=[2 3] and v=[4 -1]
+T([2 3]+[4 -1])=T(6 2)
+T(x)=x+b
+T([6 2])=[6 2]+[1 1]=[7 3] -> lhs
+
+T(u)+T(v)
+T([2 3])=[2 3]+[1 1] => [3 4]
+T([4 -1])=[4 -1]+[1 1]=>[5 0]
+T(u)+T(v) => T([2 3])+T([4 -1]) => [3 4]+[5 0]=[8 0]=>rhs
+
+and in the end lhs is not equal to rhs 
+so this linear transformation does not satisfy additivity which is one of the requirement that transformation should meeto to be a linear transformation
+
+homogenity
+T(cu)=cT(u)
+u=[2 3], c=2(some value)
+T(cu)=T([4 6]) => [4 6]+[1 1]=> [ 5 7] -> lhs
+cT(u)=> 2( [2 3]+[1 1]) => 2 [3 4] => [ 6 8] -> rhs
+here also lhs is not equal to rhs
+
+hence transfirmation T(x)=x+b, is not a linear transformation

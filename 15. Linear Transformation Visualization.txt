@@ -1,0 +1,4 @@
+transformation takes a vector and converts it into another vector 
+
+let transformation T:R -> R (1 dimension)
+transformat that we want to apply is T(x)=2x

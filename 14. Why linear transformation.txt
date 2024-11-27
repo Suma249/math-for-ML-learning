@@ -1,0 +1,10 @@
+1. dimensionality reducetion
+if our dataset has many features whivch is difficult to visualize at max as human we can only visualize 3 dimensions
+so with dimensionality reducetion we will convert high dimension to low dimension by capturing the variance in the data
+here it invovles transformation of data points
+
+2. feature engineering: 
+
+3. data preprocessing
+
+4. neural networks
