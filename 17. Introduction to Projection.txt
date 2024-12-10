@@ -1,0 +1,21 @@
+lets consider we have an xy co-ordinate system, in this co-ordinate system lets say there is a some kind of vector at point (2,3), and
+we caonnect iy from origin to this point in that direction, from this vector we can definitely crete a line and this line if we try to multiply with any
+scalar value that belongs to a real value, we can convert this vector into a straight line. coordinate alpha={c*vector | c belongs to real numbers}
+
+les consider another vector x at some point (1,6), shadow of the x can fll on vand this lenth between x and v is projection of x to l(length of vector v after
+it is multiplied by some scalar)
+
+projL(x) => projection of vector x to the line L
+
+projL(x) => some vectot in line where x-projL(x) is perpendicular to L
+(lets say we have two vectors a=[a1 a2] b=[b1 b2] that are perpendicular to ech other, dot prduct of these 2 vectors will always be 0)
+projLx=cv
+(x-cv).v=0
+xv-cv.v=0;
+c=(x.v/v.v)
+projection of l with resprect to x, projL(x)=
+
+not understood......
+
+projection of any vector x to the line l is = (x.v/v.v).v => this indicates the point where vector x is projected on line l
+

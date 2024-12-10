@@ -1,0 +1,34 @@
+inverse of a function:  inverse of a function is a function that reverses the effect of the original function
+
+if we have  function f that maps an element x from setX to an element y int setY, the inverse function f^-1 map y back to x
+
+given a function f f:X -> Y, inverse function f^-1: Y -> X
+for every y that belonhgs to set Y there is a unique x that belongs to setX such that f(x)=y
+the inverse function f^-1 satisfies the following conditions
+1. for all x that belongs to set X: f(f^-1(y))=y
+2. for all y that belongs to set Y: f^-1(f(x))=x
+these conditions imply that applying the function and then it inverse will return the original value
+
+identity function: 
+  Ix: X -> X, if a belongs to X than Ix(a)=a
+for a set X, the identity function Ix is defined as: Ic(a)= a for all a belongs to X
+Ix is the identity function on set X and it maps every elements x in X to itself
+
+properties of identity function
+1. preservation: identity function does not alter anything. if x is the domain than the image of x under the indentity function f is x
+2. linearity: identity function f is a linear transaformation
+3. indentity matrix: n*n => all the diagnol elements will be 1 and 0's elsewhere in the matrix
+4. inverse: identity function is f is its own inverse.
+
+if we have a function, than how do we say that it has inverse, for that
+1. existence: a function f has inverse if and only if it is bijective. bijective satisfies 2 properties
+   1. injective: means one to one that is different elements in the domain map to different elements in the codomain
+   2. surjective: means onto that is every element in codomain is the image of atleast one element in the domain
+ex: inverse function f(x)=2x+3
+find the invesrse
+y=2x+3 for x
+ x=(y-3)/2
+the inverse function is f^-1(y)=(y-3)/2
+verification
+f(f^-1(y))=f(y-3/2)=2(y-3/2)+3=> y-3+3 => y
+f^-1(f(x))=f^-1(2x+3)=(2x+3)-3/2 => x

@@ -1,0 +1,14 @@
+statistics is the science of collecting, organizing and analyzing data
+
+data: facts or pieces of information that can be measured, collected and analysed
+ex: weights of students in the class
+
+lets say we have house price dataset with features area, no of rooms and price with few rows of data
+we can analyse this data, create a model trained on this data 
+
+applications
+1. data exploration and summarize
+2. model building amd validation
+3. statistical analysis
+4. hypothesis testing
+5. optimization and efficiency

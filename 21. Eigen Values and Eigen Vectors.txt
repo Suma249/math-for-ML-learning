@@ -1,0 +1,35 @@
+eigen values and eigen vectors are fundamental concepts in linear algebra that have numerous applications in various fields such as physics, cs and data scirnce
+they provide insights into the properties of linear transformations represented by matrices.
+
+eighen value represented by lambda is a scalar that indicates how much an eigen vector is basically stretched or compressed during linear transformation
+
+eigen vector represented by v is a non zero vector that only changes in scale but not direction when a linear transformation is applied
+
+for square matrix A, an eigen vector and its corresponding eigen value satisfy the equation AV=lambda V
+
+let A=[4 1]
+      [2 3]
+to find eigen values 
+   det(A-AI)=0 => [4 1][lambda 0]=[4-lambda 1]
+                  [3 2][0 lambda] [2 3-lambda]
+                (4-lambda)(3-lambda)-(2)(1)=0
+                  lambda^2 - 7lambda + 10=0(quadratic equation format), solving this equation will get
+                 lambda=5 and lambda=2 => eighen values of matrix A
+finding eigen vectors
+   (A-lambda*I)v=0
+  lambda=5
+      A-5I=[4 1]-[5 0]
+           [2 3] [0 5]
+          =[-1 1]
+           [2 -2]
+  [-1 1][x]
+  [2 -2][y]=0 => y=x
+
+ for lambda=2
+      y=-2x
+A=[4 1]
+  [2 3] 
+lambda1=5  => v1=[1 1](ex as x=y)
+lambda2=2 => v2=[1 -2](ex as y=-2x)
+
+application: used in PCA

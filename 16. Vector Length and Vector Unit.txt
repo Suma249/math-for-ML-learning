@@ -1,0 +1,23 @@
+Vector magnitude is about vector length
+
+unit vector: vector has a length of 1
+
+how to calculate the vector length
+
+les say we have  vector x(->) that belongs to real values of n dimension(R^n) lets say we have values [x1, x2, x3...]
+lets say we have x vector that has values x=[2 3] and now if we go ahead and see with respect to coordinates 2 will be on x axis and 3 will be on y axis
+if we join these 2 pointd on xy corrdinate will get (2 3) point, and now whn we say length of vector it is the lwngthfrom origin to this point
+and this length can be calculated by using pythagorus theorem
+
+lets say we have another vector A(->) that belongs to 3 dimensions(R^3) and ths can be represented as ||A||= sqyare root of (x1^2+x2^2+x3^2)
+so for any n dimension, square root of(x1^2+x2^2+x3^2+...xn^2)
+
+for the unit vector ||u||=1 also represented bu u cap
+
+to convert any vector v t unt vector => (1/||v||)*v
+
+lets say we have v=[ 1 2 0] belongs to real values of 3 dimensions 
+unit vector can be calculated using the above formula
+
+vector [2 3] can be reprsented as 2icap + 3jcap -> it will be useful in normalization technique
+whateve may be the vector size, length of unit vector will be 1

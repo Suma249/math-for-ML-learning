@@ -1,0 +1,4 @@
+1. Determinant
+2. How to inverse a matrix
+
+if deeterminant of a matrix is 0, then there will definitely exists a inverse of that matrix

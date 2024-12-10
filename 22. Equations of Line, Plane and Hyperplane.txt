@@ -1,0 +1,13 @@
+1. straight line in xy plane can be represented using the equation y=mx+c
+ x and y are coordinates and m is a slope meaning that in the unit moment in the x axis what is the moment wrt to y axis -> this gives slope value
+ c is called intercept -> where does this line meet y axis when x=0
+ ax+by+c can also be use dto represent this line giving y=-(a/b)x - (c/b)
+ if we have w1x1+w2x2+b=0 => w^T+b=0 -> equation of a line
+if we have 3 dimensions or axis, in this case we dont draw straight line but a 3d plane
+wrt to 3d plane, equation becaomes w1x1+w2x2+w3x3+b=0 => eventually giving w^T+b=0
+ w=[w1 w2 w3] x=[x1 x2 x3]
+
+in n dimension case, w1x1+w2x2+...+wnxxn+b=0 => w^T+b=0
+
+lets say we have 2 axis and whar if the line passes through the origin w1x1+w2x2+b=0 => becomes w1x1+w2x2=0
+so final equation for a line passing through an origin in xy plane is given by w^Tx=0

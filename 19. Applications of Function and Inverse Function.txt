@@ -1,0 +1,46 @@
+1. Normalization and Standardization
+lets say we have a house price dataset with features area, number of rooms, carpet area, area(sq ft) and price
+except price remaing featurs are called as independent features and price is called as dependent feature
+every feature has magnitude that are measured with different units
+when we are traing the ml model its alway the good idea to not to conside the units
+here in our examples each feature have different units from other feature, so its always the good idea that we try to scale down all  these values
+in the same scale where we dont have any conditions wrt to units, 
+our main aim of scaling is that instead of having so huge magnitude we will try to reduce it to 0 to 1 range and will try  to bring it to near to eavh other
+why do we do this?, every ml model internally they have lot of mathematical operations when it is performing such operations if the magnitude is large it will take 
+lot of time, but if we scale down large magnitudes to smaller scale than this mathematicsl operations will take less time
+how do we scake? there are 2 ways
+1. standardization : in this method, will take every data feature and then scale them based on the feature, scaling is done only for 
+independent feature not for dependent fearure
+data feature is transformed to new feature that will have mean as 0 and standard deviation as 1
+in this standardization, if we have feature lets say number of rooms, how do we perform standardization?
+we can consider number of rooms feature as vector, will apply a standardization transformarion that will apply a simple formula of
+z=(xi-mue)/standard deviation
+mue is mean of data poits for number of rooms feature, i running from 1 to n, n=number of data points for number of rooms feature
+and similary we sgould be able to apply inverse function so that we can get original data points for number of rooms feature
+original transformation=> z=(xi-mue)/standard deviation
+inverse transformation= > x=z*(standard deviation)+mue, z is the transformed data point of x
+we need inverse transformation because to get the original data point
+
+use case: after training a ml model on standardized data, the predications are often scaled back to the original scale to interpret the results
+in a meaningful way.  fo instance if house prices were standardized, the inverse transformation would  convert the standardized prdiction back to the original data
+
+features -> standardized scaling -> train a ml model -> get the scaled output -> apply inverse transformation or scaling -> give the originsl output to the user
+
+2. Normalization: usually used in computer vision when working with images, 
+it is a feature scaling technique that is called as min max scalar 
+feature scaling with min max normalization'
+original transformation: z=(x-min(x))/max(x)--min(x), T:x->y
+inverse transformation:  x=z*(max(x)-min(x))/x-min(x), T^-1: y->x
+
+distribution of data
+logarithmin distribution: where data is in the shape of right skewed, we can convert it into notmal distribution as most of the ml algorithms requires data in normal distribution
+with logarithmin distribution, w
+original transformation: y=log(x)
+inverse transformation: x=e^y
+
+this is also applied in financial data analysis
+
+usecase:in financial data analysis, income or sales data often exhibits skeweness, applying a log transformation can stabilize the variance and make patterns
+more visible, after making prediction, the inverse log transformation is applied to interpret the results on the original scale 
+
+data encryption and decryption

@@ -1,4 +1,7 @@
 transformation takes a vector and converts it into another vector 
 
 let transformation T:R -> R (1 dimension)
-transformat that we want to apply is T(x)=2x
+transformat that we want to apply is T(x)=2x, T(x)=(1/2)xs are all linear transformations
+
+with linear transformation, origin must be fixed and all lines must remain as line
+scale may chaneg but origin will remains ame
