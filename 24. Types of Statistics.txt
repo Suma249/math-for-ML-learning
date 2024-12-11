@@ -1,0 +1,26 @@
+Types of Statistics
+
+1. Descriptive Statistics: invovles methods for summarizing and organizing data to make it understandable. this type of statistics helps to describe
+ the basic features of the data in the study
+ concepts include,
+ 1. Mesure of Central Tendency(mean, median and mode)
+ 2. measure of dispersion(variation and standard deviation)
+ 3. data distribution(histogram, box plot, pie chart etc.,)
+ 4. Summary Statistics(five number summary that says about q1, q2, q3, maximum value)
+
+2. Infrential Statistics: involves methods for making predictions or inferences about a population based on a sample of data. it allowsfor hypothesis testing,
+   estimation and drawing conclusions
+   concepts include,
+  1. hypothesis testing
+  2. p value
+  3. confidence interval
+  4. statistical analysid test
+     1. z test 
+     2. t test
+
+lets say there are 20 statistics class in our college and we have collected the height of students in the class
+heights are recorded( 175cm, 180c, 140cm, 135cm, 160cm, 120cm]
+
+over here
+descriptive question: what is the average height of the entire class -> we use measure of central tendency here
+infrentual question:are the height of samplew students in classrom similar to what u express in the entire colleg -> making a conclusion

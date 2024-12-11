@@ -1,0 +1,31 @@
+Population and Sample Data
+
+Population: is the entire set of individuals or objects of interest in a particular study. it includes all members of a defined group
+that we are studying or collecting information on
+
+characteristcs include,
+ 1. complete set: it contains all the observations of interst
+ 2. parameter: a numerical value summaring the entire population(population mean, population variance are examples)
+ex: 
+ 1. population in a school study: all students enrolled in a school
+    usecase: determining average height of students(population mean)
+ 2. population in market reasearch: all the consumers in the city
+    usecase: to understand the purchasing behaviour of all consumers
+ 3. population in a medical study: all the patients with a specific disease
+    usecase: to study the effectiveness of a drug
+
+
+Sample Data: is a subset of the populaton that is used represent the entire group. sampling invovles selecting a group of individuals or observations
+  from the population to draw conclusions about the whole population
+
+characteristics includes,
+ 1. subset: represents the portion of the population
+ 2. statistic: a numerical value summarizing the sample data (sample mean, sample variance)
+ 3. random sampling: samples should be randomly selected to avoid bias
+ex: 
+ 1. sample in a school study: a group of 50 students
+    usecase: estimate the average height of students in a school
+ 2. sample in market research: sample of 500 consumers in the city
+    usecase: generakize population behavious based on sample cusyomers behaviour
+ 3. sample in a medical study: 400 patients
+    usecase" test the effectiveness of a drug
